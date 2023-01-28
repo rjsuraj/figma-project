@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Raleway:wght@500;600;700&family=Roboto+Flex:opsz@8..144&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* resets */
+
+:root{
+    --primary-text-color : #777C85;
+    --secondary-text-color : #999999;
+    --accent-color : #4E5DC0;
+    --accent-dark-color : #16171C;
+    --inline-padding-right : 10px;
+    --inline-padding-left : 100px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 1.2rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* utility classes */
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: var(--inline-padding-left);
+    padding-right: var(--inline-padding-right);
+}
+
+
+/* header */
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 50px;
+}
+
+
+.nav-links ul{
+    display: flex;
+    gap: 50px;
+    font-weight: 600;
+}
+
+.nav-links li a{
+    color: var(--primary-text-color);
+}
+
+li:first-child a{
+    color: var(--accent-color);
+}
+
+li:first-child a::after{
+    content: '';
+    display: block;
+    width: 70%;
+    margin: 10px auto 0;
+    border: 1px solid var(--accent-color);
+}
+
+.primary-btn{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
